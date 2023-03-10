@@ -18,6 +18,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Start Components */
 .special-heading {
   color: #ebeced;
