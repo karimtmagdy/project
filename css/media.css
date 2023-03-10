@@ -1,0 +1,106 @@
+@media (max-width: 480px) {
+  .special-heading {
+    font-size: 50px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+  }
+  .container {
+    width: 310px;
+    flex-direction: column;
+  }
+  .header .container {
+    width: 310px;
+    flex-direction: column;
+  }
+  .nav li {
+  padding: 3px 5px!important;
+}
+.landing {
+  background-image: url(/imgs/12.jpg);
+  background-size: cover;
+  color: #fff;
+}
+.landing .container .content button {
+  color: #fff;
+}
+.download .container p {
+  font-size: 13px;
+  text-align: center;
+}
+.our-beginning .container {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.our-beginning .container .content-box p {
+  text-align: center;
+}
+.our-beginning .container .content-box button {
+  align-self: center;
+  margin-bottom: 5px;
+}
+.portfolio .container {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.portfolio .container .box {
+  flex-direction: column;
+}
+.portfolio .container .box button {
+  padding: 5px 5px;
+}
+.portfolio .container .content-photo {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.subscribe .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  height: 140px;
+}
+.subscribe .container .sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe .container h3 {
+  font-size: 15px;
+}
+.subscribe .container .sub i {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  left: 30px;
+  top: 45px;
+}
+.subscribe .container .sub input[type="email"] {
+  width: 200px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+.subscribe .container .sub input[type="submit"] {
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: center;
+}
+.contact .container .box-us {
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .container .send-text {
+  align-items: center;
+  justify-content: center;
+}
+.contact .container .send-text input[type="text"] {
+  flex-basis: 100%;
+}
+.contact .container .send-text textarea {
+  flex-basis: 100%;
+}
+.contact .container button {
+  margin: 10px auto;
+}
+}
