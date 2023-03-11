@@ -17,9 +17,7 @@
   padding: 3px 5px!important;
 }
 .landing {
-  background-image: url(imgs/12.jpg);
-  background-size: cover;
-  color: #fff;
+  padding: 0;
 }
 .landing .container .content button {
   color: #fff;
@@ -71,7 +69,7 @@
   position: absolute;
   color: #fff;
   font-size: 20px;
-  left: 30px;
+  left: 15px;
   top: 45px;
 }
 .subscribe .container .sub input[type="email"] {
@@ -103,4 +101,81 @@
 .contact .container button {
   margin: 10px auto;
 }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 500px;
+    flex-direction: column;
+  }
+  .download .container p {
+    font-size: 14px;
+  }
+  .our-beginning .container .content-box p {
+    text-align: center;
+  }
+  .our-beginning .container .content-box button {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .portfolio .container p {
+    text-align: center;
+  }
+  .portfolio .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .portfolio .container .box button {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+  .subscribe .container h3 {
+    align-self: center;
+  }
+  .subscribe .container .sub input[type="email"] {
+    width: 400px;
+  }
+  .subscribe .container .sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe .container .sub input[type="submit"] {
+    padding: 10px 40px;
+    margin-top: 10px;
+  }
+  .contact .container .box-us .box {
+    width: 150px;
+  }
+  .contact .container button {
+    margin-left: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 640px;
+  }
+  .our-beginning .container .content-box button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .subscribe .container .sub input[type="email"] {
+    width: 400px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  .our-beginning .container .content-box button {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    width: 1000px;
+  }
+  .our-beginning .container .content-box button {
+    margin-bottom: 10px;
+  }
 }
