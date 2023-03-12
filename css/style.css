@@ -134,9 +134,30 @@ html {
   border-bottom: 1px solid ;
 }
 .landing .container .content p {
-  font-size: 30px;
+  color: rgb(255 255 255 / 80%);
+  font-size: 25px;
   text-transform: uppercase;
   text-align: center;
+  border-right: 2px solid rgb(255 255 255 / 80%);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: control-width 3s 2s steps(41) both, blink 0.5s infinite;
+}
+@keyframes control-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from {
+    border-right-color: rgb(255 255 255 / 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 .landing .container .content button {
   padding: 10px 30px;
@@ -175,7 +196,6 @@ html {
 }
 /* end download */
 /* start our */
-.our-beginning {}
 .our-beginning .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -197,11 +217,9 @@ html {
 }
 .our-beginning .container .content-box p:first-of-type {
   line-height: var(--main-line);
-  color: #fff;
 }
 .our-beginning .container .content-box p:last-of-type {
   line-height: var(--main-line);
-  color: #fff;
 }
 .our-beginning .container .content-box button {
   padding: 10px 20px;
@@ -242,7 +260,6 @@ html {
   justify-content: center;
 }
 .portfolio .container p {
-  color: #fff;
   text-align: center;
   line-height: var(--main-line);
 }
@@ -302,7 +319,6 @@ html {
 }
 /* end portfolio */
 /* start about */
-.about {}
 .about .container {
   display: flex;
   flex-direction: column;
@@ -313,7 +329,6 @@ html {
   width: 100%;
   padding: 30px;
   margin-right: -200px;
-  color: #fff;
 }
 .about .container .content {
   display: grid;
@@ -487,7 +502,6 @@ html {
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
-
   color: #fff;
   cursor: pointer;
   margin-top: 10px;
