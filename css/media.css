@@ -19,6 +19,17 @@
 .landing {
   padding: 0;
 }
+.landing .container .content p {
+  font-size: 12px;
+}
+@keyframes control-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .landing .container .content button {
   color: #fff;
 }
@@ -106,6 +117,17 @@
   .container {
     width: 500px;
     flex-direction: column;
+  }
+  .landing .container .content p {
+    font-size: 19px;
+  }
+  @keyframes control-width {
+    from {
+      width: 0;
+    }
+    to {
+      width: 480px;
+    }
   }
   .download .container p {
     font-size: 14px;
