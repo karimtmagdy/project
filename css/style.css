@@ -114,7 +114,6 @@ html {
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
   position: relative;
-  z-index: -1;
 }
 .landing .container {
   height: 300px;
