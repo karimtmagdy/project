@@ -52,7 +52,8 @@ a {
   margin-right: auto;
 }
 body {
-  background-image: linear-gradient(280deg,#200024,#2f00ff);
+  background: linear-gradient(90deg, #e0ae0c 0%, #fd7701 100%);
+  /* background: linear-gradient(90deg, #e90202 0%, #061ef5 100%); */
   font-family: sans-serif;
 }
 html {
@@ -61,6 +62,7 @@ html {
 /* start header */
 .header {
   background-color: #fff;
+  box-shadow: 0px 0px 4px 0 black;
 }
 .header .container {
   display: flex;
@@ -90,30 +92,29 @@ html {
 }
 .header .container .nav .links li {
   padding: 10px 20px;
+  border-radius: 6px;
+  transition: var(--main-transition);
 }
 .header .container .nav .links li.active {
-  background-color: var(--secondary-color);
+  background-color: #fd7701;
 }
 .header .container .nav .links li.active:hover  a {
   color: #fff!important;
 }
 .header .container .nav .links li a {
   font-weight: bold;
-  transition: var(--main-transition);
-}
-.header .container .nav .links li a:hover {
-  color: var(--secondary-color);
 }
 .header .container .nav .links li:hover {
-  background-image: linear-gradient(280deg,#200024,#2f00ff);
+  background-color: #e0ae0c;
   cursor: pointer;
 }
 /* end header */
 /* start landing */
 .landing {
-  position: relative;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
+  position: relative;
+  z-index: -1;
 }
 .landing .container {
   height: 300px;
@@ -134,11 +135,11 @@ html {
   border-bottom: 1px solid ;
 }
 .landing .container .content p {
-  color: rgb(255 255 255 / 80%);
+  color: rgba(0, 0, 0);
   font-size: 25px;
   text-transform: uppercase;
   text-align: center;
-  border-right: 2px solid rgb(255 255 255 / 80%);
+  border-right: 1px solid rgba(0, 0, 0, 0.8);
   white-space: nowrap;
   overflow: hidden;
   animation: control-width 3s 2s steps(41) both, blink 0.5s infinite;
@@ -153,7 +154,7 @@ html {
 }
 @keyframes blink {
   from {
-    border-right-color: rgb(255 255 255 / 80%);
+    border-right-color: rgba(0, 0, 0, 0.8);
   }
   to {
     border-right-color: transparent;
@@ -170,13 +171,13 @@ html {
   transition: var(--main-transition);
 }
 .landing .container .content button:hover {
-  background-color: #000000;
+  background-color: #000;
   color: #fff!important;
 }
 /* end landing */
 /* start download */
 .download {
-  background: #00000073; 
+  background: rgb(2, 2, 2); 
 }
 .download .container {
   height: 80px;
@@ -192,13 +193,14 @@ html {
   padding: 10px 15px;
   border-radius: 20px;
   border: none;
+  text-transform: uppercase;
   cursor: pointer;
 }
 /* end download */
 /* start our */
 .our-beginning .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .our-beginning .container .content-box {
   display: flex;
@@ -254,10 +256,17 @@ html {
   padding-bottom: var(--padding-bottom);
 }
 .portfolio .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  gap: 40px;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  /* background-color: #000; */
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px; */
+}
+.portfolio .container .content-box {
+  margin-bottom: 20px;
 }
 .portfolio .container p {
   text-align: center;
@@ -267,6 +276,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 .portfolio .container .box button {
   text-transform: uppercase;
@@ -275,18 +285,18 @@ html {
   background-color: transparent;
   transition: var(--main-transition);
 }
-.portfolio .container .box button:hover {
+.portfolio .container .content-box .box button:hover {
   background-color: #000;
   color: #fff;
   cursor: pointer;
 }
 .portfolio .container .content-photo {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 .portfolio .container .content-photo .image img {
-  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+  background: linear-gradient(90deg, #2c2b29 0%, #000851 100%);
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -365,7 +375,7 @@ html {
   gap: 10px;
 }
 .about .container .box-about-us .box {
-  background: linear-gradient(#eee, #333);
+  background: white;
   width: 100%;
   padding: 10px;
   border-radius: 6px;
@@ -373,7 +383,7 @@ html {
   margin-bottom: 10px;
 }
 .about .container .box-about-us .box:hover {
-  scale: 1.1;
+  scale: 0.9;
 }
 .about .container .box-about-us .box h3 {
   text-align: center;
@@ -392,6 +402,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
 }
 .subscribe .container h3 {
   display: flex;
@@ -432,7 +443,10 @@ html {
 }
 /* end subscribe */
 /* start contact */
-.contact {}
+.contact {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
 .contact .container {
   display: flex;
   flex-direction: column;
@@ -444,12 +458,13 @@ html {
 .contact .container .box-us {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 10px;
 }
 .contact .container .box-us .box {
-  background: linear-gradient(#eee, #333);  
-  border: 1px solid #fff;
+  background: white;
   border-radius: 6px;
   width: 200px;
   height: 80px;
@@ -458,6 +473,17 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   transition: var(--main-transition);
+}
+@media(max-width: 480px) {
+  .contact .container .box-us {
+    flex-direction: row!important;
+  }
+  .contact .container .box-us .box {
+    width: 85px;
+  }
+  .contact .container .box-us .box h5 {
+    font-size: 10px;
+  }
 }
 .contact .container .box-us .box:hover {
   scale: 1.1;
@@ -516,10 +542,7 @@ html {
   align-items: center;
   flex-direction: column;
   height: 100px;
-  justify-content: space-around;
-}
-.footer .container .logo img {
-  width: 40px;
+  justify-content: space-evenly;
 }
 .footer .container .social {
   width: 300px;
