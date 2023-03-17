@@ -13,14 +13,26 @@
     width: 310px;
     flex-direction: column;
   }
+  .header .container .nav {
+    width: 100%;
+  }
   .nav li {
   padding: 3px 5px!important;
 }
 .landing {
   padding: 0;
+  background-image: url(../imgs/13-unsplash.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+  display: flex;
+  align-items: center;
 }
 .landing .container .content p {
   font-size: 12px;
+  color: rgb(255 255 255 / 80%);
+  border-right: 1px solid rgb(255 255 255 / 80%);
 }
 @keyframes control-width {
   from {
@@ -30,12 +42,16 @@
     width: 100%;
   }
 }
-.landing .container .content button {
+/* .landing .container .content button {
   color: #fff;
-}
+} */
 .download .container p {
-  font-size: 13px;
+  font-size: 10px;
   text-align: center;
+}
+.download .container button {
+  padding: 9px 14px;
+  font-size: 12px!important;
 }
 .our-beginning .container {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -117,6 +133,9 @@
   .container {
     width: 500px;
     flex-direction: column;
+  }
+  .header .container .nav {
+    width: 100%;
   }
   .landing .container .content p {
     font-size: 19px;
