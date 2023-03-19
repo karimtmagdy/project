@@ -21,8 +21,9 @@
 }
 .landing {
   padding: 0;
-  background: url("../imgs/yellow-window.jpg");
+  background-image: url("../imgs/yellow-window.jpg");
   width: 100%;
+  position: relative;
   background-size: cover;
   background-position: center;
   height: 570px;
@@ -137,6 +138,19 @@
   .header .container .nav {
     width: 100%;
   }
+  
+  .landing {
+  padding: 0;
+  background-image: url("../imgs/yellow-window.jpg");
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+  display: flex;
+  align-items: center;
+}
+  
   .landing .container .content p {
     font-size: 19px;
   }
