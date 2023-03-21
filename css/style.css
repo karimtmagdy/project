@@ -60,7 +60,7 @@ body {
   font-family: sans-serif;
   /* background-color: #2d2d2d; */
   /* background: linear-gradient(90deg, #e0ae0c 0%, #fd7701 100%); */
- /*  background: linear-gradient(90deg, #e90202 0%, #061ef5 100%); */
+  /* background: linear-gradient(90deg, #e90202 0%, #061ef5 100%); */
 }
 ul {
   list-style: none;
@@ -81,26 +81,26 @@ img {
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .container {
-    width: 650px;
-    background-color: var(--primary-color);
+    width: 600px;
+    /* background-color: var(--primary-color); */
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 760px;
-    background-color: #fd7701;
+    /* background-color: #fd7701; */
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
-    width: 1050px;
-    background-color: #f300f4;
+    width: 970px;
+    /* background-color: #f300f4; */
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .container {
     width: 1170px;
-    background-color: #f0f600;
+    /* background-color: #f0f600; */
   }
 }
 /* standard media */
@@ -142,6 +142,11 @@ img {
   align-items: center;
   justify-content: flex-end;
 }
+@media (min-width: 768px) {
+  .header .container .nav .icon {
+    display: none;
+  }
+}
 .header .container .nav .icon span {
   height: 2px;
   background-color: #000;
@@ -177,6 +182,11 @@ img {
     top: 100%;
     display: none;
     /* transition: 0.5s; */
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .header .container .nav .links {
+    display: none;
   }
 }
 .header .container .nav .links li {
@@ -276,7 +286,7 @@ input:checked + .slide::before {
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 570px;
+    height: 600px;
     display: flex;
     align-items: center;
   }
@@ -362,6 +372,12 @@ input:checked + .slide::before {
     flex-direction: column;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .download .container {
+    flex-direction: column;
+  }
+}
+
 .download .container p {
   text-transform: uppercase;
   color: #fff;
@@ -425,6 +441,7 @@ input:checked + .slide::before {
   cursor: pointer;
   border: 1px solid #000;
   background: transparent;
+  margin: 10px auto;
   transition: var(--main-duration);
 }
 @media (max-width: 480px) {
@@ -438,7 +455,11 @@ input:checked + .slide::before {
   background: #000;
 }
 .our-beginning .container .image {
-  width: 100%;
+  display: flex;
+
+  flex-basis: 100%;
+  align-items: center;
+
 }
 .our-beginning .container .image img {
   max-width: 100%;
@@ -551,7 +572,7 @@ input:checked + .slide::before {
 }
 .about .container .content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
 .about .container .content .box {
@@ -656,6 +677,44 @@ input:checked + .slide::before {
     transform: translateY(-40%);
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .subscribe .container .sub i {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 60px;
+    top: 38%;
+    /* transform: translateY(-40%); */
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .subscribe .container .sub i {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 40px;
+    top: 65%;
+    /* transform: translateY(-40%); */
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .subscribe .container .sub i {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 150px;
+    top: 65%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .subscribe .container .sub i {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 250px;
+    top: 65%;
+  }
+}
 .subscribe .container .sub input[type="email"] {
   width: 500px;
   height: 50px;
@@ -665,6 +724,7 @@ input:checked + .slide::before {
   outline: none;
   margin-right: 10px;
   position: relative;
+  color: white;
 }
 @media (max-width: 480px) {
   .subscribe .container .sub input[type="email"] {
@@ -724,6 +784,7 @@ input:checked + .slide::before {
   border-radius: 6px;
   width: calc(90% / 3);
   height: 80px;
+  border: 1px solid #1cb5e0;
   display: flex;
   align-items: center;
   flex-direction: column;
