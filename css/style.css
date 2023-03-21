@@ -838,45 +838,6 @@ input:checked + .slide::before {
   cursor: pointer;
   margin: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* start footer */
 .footer {
   background: #00000073;
