@@ -125,7 +125,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--main-color);
+  /* color: var(--main-color); */
+  color: #2196f3;
 }
 .header .container .nav {
   display: flex;
@@ -359,7 +360,8 @@ input:checked + .slide::before {
 /* end landing */
 /* start download */
 .download {
-  background: rgb(2, 2, 2);
+  /* background: rgb(2, 2, 2); */
+  background: #b7bbc7;
 }
 .download .container {
   height: 80px;
@@ -515,6 +517,11 @@ input:checked + .slide::before {
     padding: 5px 5px;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .portfolio .container .box button {
+    padding: 10px 15px;
+  }
+}
 .portfolio .container .content-box .box button:hover {
   background-color: #000;
   color: #fff;
@@ -526,7 +533,7 @@ input:checked + .slide::before {
   gap: 20px;
 }
 .portfolio .container .content-photo .image img {
-  background: linear-gradient(90deg, #2c2b29 0%, #000851 100%);
+  background: linear-gradient(90deg, #b7bbc7 0%, #20b9fc 100%);
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -591,7 +598,7 @@ input:checked + .slide::before {
   transition: var(--main-duration);
 }
 .about .container .box span {
-  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  background: linear-gradient(90deg, #b7bbc7 0%, #20b9fc 100%);
   position: absolute;
   bottom: -40px;
   text-align: center;
@@ -626,7 +633,7 @@ input:checked + .slide::before {
 /* end about */
 /* start subscribe */
 .subscribe {
-  background: #00000073;
+  background: #b7bbc7;
   padding: 20px;
 }
 .subscribe .container {
@@ -742,7 +749,7 @@ input:checked + .slide::before {
   color: #fff;
 }
 .subscribe .container .sub input[type="submit"] {
-  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  background: linear-gradient(90deg, #b7bbc7 0%, #20b9fc 100%);
   border-radius: 20px;
   color: #fff;
   text-transform: uppercase;
@@ -830,7 +837,7 @@ input:checked + .slide::before {
 .contact .container button {
   margin-left: 80%;
   padding: 10px 30px;
-  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  background: linear-gradient(90deg, #b7bbc7 0%, #20b9fc 100%);
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
@@ -838,9 +845,10 @@ input:checked + .slide::before {
   cursor: pointer;
   margin: 10px;
 }
+/* end contact */
 /* start footer */
 .footer {
-  background: #00000073;
+  background: #b7bbc7;
 }
 .footer .container {
   display: flex;
